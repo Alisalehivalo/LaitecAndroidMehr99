@@ -1,23 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
-
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wellcome to LAITEC"
+        android:textColor="#FF5722"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/txtTitle"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Please enter Your Name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:textColorHint="@color/colorPrimary"
+       android:textSize="25sp"
+        android:inputType="number"
+        android:id="@+id/edtName"/>
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Click"
+        android:gravity="center"
+        android:background="#FFC107"
+        android:id="@+id/btnClick"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"/>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imgBluetooth"
-        android:src="@drawable/money"/>
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:id="@+id/imgPicture"
+        android:src="@drawable/shaghol"
+        android:cropToPadding="true"
+        android:padding="10dp"/>
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/car"
+        android:cropToPadding="true"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnCar"/>
+
+
+
+
+
+
+
 
 </LinearLayout>
